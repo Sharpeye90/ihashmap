@@ -21,7 +21,8 @@ test:
 build:
 	python3 setup.py sdist
 	mv dist/$(NAME)-$(VERSION).tar.gz /root/rpmbuild/SOURCES/
-	rpmbuild -ba $(NAME).spec
 
+sources:
+	rpmbuild -ba $(NAME).spec
 install:
 	python3 setup.py install
