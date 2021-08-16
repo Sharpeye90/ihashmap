@@ -2,10 +2,6 @@
 
 import setuptools
 
-with open(".version") as version_file:
-    version = version_file.read()
-
-
 module_info = {
     "name": "ihashmap",
     "version": "1.0.5",
@@ -13,7 +9,7 @@ module_info = {
     "author": "Yury Sokov aka. Yurzs",
     "author_email": "yurzs+ihashmap@icloud.com",
     "packages": setuptools.find_packages(
-        exclude=("tests", "tests.*", "*.tests"), include=[".version", "ihashmap"]
+        exclude=("tests", "tests.*", "*.tests"),
     ),
     "license": "MIT",
     "keywords": ["cache", "indexes"],
