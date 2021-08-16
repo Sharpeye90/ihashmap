@@ -10,7 +10,7 @@ Summary:        Indexed hashmap wrapper in Python
 
 Group:          Libraries
 License:        MIT
-Source:         %{pkgname}-%{version}.tar.gz
+Source:         %{name}-%{version}.tar.gz
 
 BuildArch:      noarch
 BuildRequires:  python%{python3_pkgversion}-devel python%{python3_pkgversion}-setuptools
@@ -33,5 +33,5 @@ Automaticly indexed hashmap for quick search and wrapper for things that don't e
 rm -rf %buildroot
 
 %files
-%{python3_sitelib}/%{pkgname}/
-%{python3_sitelib}/%{pkgname}-%{version}-py%{python3_version}.egg-info/
+%{python3_sitelib}/%{name}/
+%{python3_sitelib}/%{name}-%{version}-py%{python3_version}.egg-info/
